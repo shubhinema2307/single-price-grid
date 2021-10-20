@@ -1,0 +1,678 @@
+/* common css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Karla', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* basic css */
+* {
+    box-sizing: border-box;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /* border: 1px solid red; */
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+     /* For mobile phones: */
+     [class*="col-"] {
+        width: 100%;
+      }
+
+.container {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    padding: 15% 0;
+}
+
+.main-template {
+    width: 80%;
+    height: auto;
+    box-shadow: 0px 4px 12px 0px hsl(218, 22%, 67%);
+}
+
+.join-community {
+    background-color: #ffffff;
+    padding: 10%;
+}
+
+.join-community h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 30px;
+}
+
+.join-community h4 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.19px;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+}
+
+.join-community p {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.17px;
+    color: hsl(218, 22%, 67%);
+}
+
+.monthly-subscription {
+    background-color: hsl(179, 62%, 43%);
+    padding: 10%;
+}
+.monthly-subscription h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.monthly-subscription h4 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.monthly-subscription h4>span{
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    color: hsl(204, 43%, 93%);
+    font-weight: normal;
+}
+
+.monthly-subscription p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-signup {
+    background-color: hsl(71, 73%, 54%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    border: 1px solid hsl(71, 73%, 54%);
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.why-us {
+    background-color: hsl(179, 62%, 46%);
+    padding: 10%;
+}
+
+.why-us h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+    margin-bottom: 20px;
+}
+
+.why-us p {
+    color: hsl(204, 43%, 93%);
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.17px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+     /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+  .container {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    padding: 15% 0;
+}
+
+.main-template {
+    width: 80%;
+    height: auto;
+    box-shadow: 0px 4px 12px 0px hsl(218, 22%, 67%);
+}
+
+.join-community {
+    background-color: #ffffff;
+    padding: 10%;
+}
+
+.join-community h2 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 30px;
+}
+
+.join-community h4 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.19px;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+}
+
+.join-community p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.17px;
+    color: hsl(218, 22%, 67%);
+}
+
+.monthly-subscription {
+    background-color: hsl(179, 62%, 43%);
+    padding: 10%;
+}
+.monthly-subscription h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.monthly-subscription h4 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.monthly-subscription h4>span{
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    color: hsl(204, 43%, 93%);
+    font-weight: normal;
+}
+
+.monthly-subscription p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-signup {
+    background-color: hsl(71, 73%, 54%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    border: 1px solid hsl(71, 73%, 54%);
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.why-us {
+    background-color: hsl(179, 62%, 46%);
+    padding: 10%;
+}
+
+.why-us h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+    margin-bottom: 20px;
+}
+
+.why-us p {
+    color: hsl(204, 43%, 93%);
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.17px;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* For desktop: */ 
+    .col-1 {width: 8.33%;} 
+    .col-2 {width: 16.66%;} 
+    .col-3 {width: 25%;} 
+    .col-4 {width: 33.33%;} 
+    .col-5 {width: 41.66%;} 
+    .col-6 {width: 50%;} 
+    .col-7 {width: 58.33%;} 
+    .col-8 {width: 66.66%;} 
+    .col-9 {width: 75%;} 
+    .col-10 {width: 83.33%;} 
+    .col-11 {width: 91.66%;} 
+    .col-12 {width: 100%;}
+
+.container {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    padding: 15% 0;
+}
+
+.main-template {
+    width: 75%;
+    height: auto;
+    box-shadow: 0px 4px 12px 0px hsl(218, 22%, 67%);
+}
+
+.join-community {
+    background-color: #ffffff;
+    padding: 5%;
+}
+
+.join-community h2 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 30px;
+}
+
+.join-community h4 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.19px;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+}
+
+.join-community p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.17px;
+    color: hsl(218, 22%, 67%);
+}
+
+.monthly-subscription {
+    background-color: hsl(179, 62%, 43%);
+    padding: 5%;
+}
+.monthly-subscription h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.monthly-subscription h4 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.monthly-subscription h4>span{
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    color: hsl(204, 43%, 93%);
+    font-weight: normal;
+}
+
+.monthly-subscription p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-signup {
+    background-color: hsl(71, 73%, 54%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    border: 1px solid hsl(71, 73%, 54%);
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.why-us {
+    background-color: hsl(179, 62%, 46%);
+    padding: 5%;
+}
+
+.why-us h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+    margin-bottom: 20px;
+}
+
+.why-us p {
+    color: hsl(204, 43%, 93%);
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.17px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* For desktop: */ 
+    .col-1 {width: 8.33%;} 
+    .col-2 {width: 16.66%;} 
+    .col-3 {width: 25%;} 
+    .col-4 {width: 33.33%;} 
+    .col-5 {width: 41.66%;} 
+    .col-6 {width: 50%;} 
+    .col-7 {width: 58.33%;} 
+    .col-8 {width: 66.66%;} 
+    .col-9 {width: 75%;} 
+    .col-10 {width: 83.33%;} 
+    .col-11 {width: 91.66%;} 
+    .col-12 {width: 100%;} 
+
+    .container {
+        background-color: hsl(204, 43%, 93%);
+        display: flex;
+        justify-content: center;
+        padding: 15% 0;
+    }
+    
+    .main-template {
+        width: 60%;
+        height: auto;
+        box-shadow: 0px 4px 12px 0px hsl(218, 22%, 67%);
+    }
+    
+    .join-community {
+        background-color: #ffffff;
+        padding: 5%;
+    }
+    
+    .join-community h2 {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+        color: hsl(179, 62%, 43%);
+        margin-bottom: 30px;
+    }
+    
+    .join-community h4 {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: -0.19px;
+        color: hsl(71, 73%, 54%);
+        margin-bottom: 20px;
+    }
+    
+    .join-community p {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.17px;
+        color: hsl(218, 22%, 67%);
+    }
+    
+    .monthly-subscription {
+        background-color: hsl(179, 62%, 43%);
+        padding: 5%;
+    }
+    .monthly-subscription h2 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.22px;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    
+    .monthly-subscription h4 {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    
+    .monthly-subscription h4>span{
+        font-size: 14px;
+        letter-spacing: -0.2px;
+        color: hsl(204, 43%, 93%);
+        font-weight: normal;
+    }
+    
+    .monthly-subscription p {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.2px;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    
+    .btn-signup {
+        background-color: hsl(71, 73%, 54%);
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        border: 1px solid hsl(71, 73%, 54%);
+        border-radius: 10px;
+        padding: 20px 0;
+    }
+    
+    .why-us {
+        background-color: hsl(179, 62%, 46%);
+        padding: 5%;
+    }
+    
+    .why-us h2 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.22px;
+        margin-bottom: 20px;
+    }
+    
+    .why-us p {
+        color: hsl(204, 43%, 93%);
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: -0.17px;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .container {
+        background-color: hsl(204, 43%, 93%);
+        display: flex;
+        justify-content: center;
+        padding: 15% 0;
+        width: 100%;
+    }
+    
+    .main-template {
+        width: 50%;
+        height: auto;
+        box-shadow: 0px 4px 12px 0px hsl(218, 22%, 67%);
+    }
+    
+    .join-community {
+        background-color: #ffffff;
+        padding: 6%;
+    }
+    
+    .join-community h2 {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+        color: hsl(179, 62%, 43%);
+        margin-bottom: 30px;
+    }
+    
+    .join-community h4 {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: -0.19px;
+        color: hsl(71, 73%, 54%);
+        margin-bottom: 20px;
+    }
+    
+    .join-community p {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.17px;
+        color: hsl(218, 22%, 67%);
+    }
+    
+    .monthly-subscription {
+        background-color: hsl(179, 62%, 43%);
+        padding: 6%;
+    }
+    .monthly-subscription h2 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.22px;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    
+    .monthly-subscription h4 {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    
+    .monthly-subscription h4>span{
+        font-size: 14px;
+        letter-spacing: -0.2px;
+        color: hsl(204, 43%, 93%);
+        font-weight: normal;
+    }
+    
+    .monthly-subscription p {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.2px;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    
+    .btn-signup {
+        background-color: hsl(71, 73%, 54%);
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        border: 1px solid hsl(71, 73%, 54%);
+        border-radius: 10px;
+        padding: 20px 0;
+    }
+    
+    .why-us {
+        background-color: hsl(179, 62%, 46%);
+        padding: 6%;
+    }
+    
+    .why-us h2 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.22px;
+        margin-bottom: 20px;
+    }
+    
+    .why-us p {
+        color: hsl(204, 43%, 93%);
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: -0.17px;
+    }
+
+}
